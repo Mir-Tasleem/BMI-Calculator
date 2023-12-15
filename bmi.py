@@ -24,7 +24,10 @@ else:
     height=height/3.28
 
 
-bmi=weight/(height)**2
+try:
+    bmi=weight/(height)**2
+except:
+    st.text("Enter the height")
 
 if(st.button('Calculate BMI')):
  
